@@ -9,6 +9,7 @@ var Photocell = module.exports = function(opts) {
   Device.call(this);
   this.opts = opts || {};
   this.intensity = 0;
+  this.increment = this.opts['increment'] || 15;
 };
 util.inherits(Photocell, Device);
 
@@ -24,6 +25,6 @@ Photocell.prototype.init = function(config) {
   var counter = 0;
   setInterval(function() {
     self.intensity = Math.sin(degToRad(counter)) + 1.0;
-    counter += 15;
+    counter += self.increment;
   }, 100);
 };
