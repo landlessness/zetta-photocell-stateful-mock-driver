@@ -20,7 +20,7 @@ Photocell.prototype.init = function(config) {
 
   config
     .name(name)
-    .type('photocell')
+    .type('Photocell')
     .state('ready')
     .when('ready', {allow: ['make-not-ready']})
     .when('not-ready', {allow: ['make-ready']})
