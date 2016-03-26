@@ -1,6 +1,6 @@
 {
   "name": "zetta-photocell-stateful-mock-driver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mock stateful photocell device for Zetta that generates a sine wave.",
   "main": "index.js",
   "scripts": {

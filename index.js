@@ -16,11 +16,11 @@ var Photocell = module.exports = function(opts) {
 util.inherits(Photocell, Device);
 
 Photocell.prototype.init = function(config) {
-  var name = this.opts.name || 'photocell';
+  var name = this.opts.name || 'Photocell';
 
   config
     .name(name)
-    .type('Photocell')
+    .type('photocell')
     .state('ready')
     .when('ready', {allow: ['make-not-ready']})
     .when('not-ready', {allow: ['make-ready']})
