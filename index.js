@@ -1,6 +1,7 @@
 var Device = require('zetta-device');
 var util = require('util');
 
+var TIMEOUT = 3000;
 function degToRad(x) {
   return x * ( Math.PI / 180 );
 }
